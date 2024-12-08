@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>视频</title>
+    <style></style>
+  </head>
+  <body>
+    <video controls muted width="100%" loop poster="视频实验/images/zz.jpg">
+      <source src="视频实验/video/start.mp4" />
+      <!-- <source src="视频实验/video/zz.mp4" /> -->
+    </video>
+    <button onclick="playVideo()">播放</button>
+    <button onclick="pauseVideo()">暂停</button>
+    <button onclick="muteVideo()">静音</button>
+    <button onclick="unmuteVideo()">取消静音</button>
+    <button onclick="volume()">+</button>
+    <button onclick="disvolume()">-</button>
+    <script>
+      function playVideo() {
+        document.querySelector("video").play();
+      }
+      function pauseVideo() {
+        document.querySelector("video").pause();
+      }
+      function muteVideo() {
+        document.querySelector("video").muted = true;
+      }
+      function unmuteVideo() {
+        document.querySelector("video").muted = false;
+      }
+      function volume() {
+        document.querySelector("video").volume += 1;
+      }
+      function disvolume() {
+        document.querySelector("video").volume -= 1;
+      }
+    </script>
+  </body>
+</html>
