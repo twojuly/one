@@ -93,11 +93,21 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 10px #888888;
   background-color: #ffffff;
-  /* transition: all 0.3s ease-in-out; */
+  transition: transform 0.3s ease-in-out;
 }
 
 .work-img:hover {
-  transform: rotateZ(180deg);
+  /* transform: rotateZ(180deg); */
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 .work-a {

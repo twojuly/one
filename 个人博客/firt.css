@@ -67,6 +67,17 @@ body {
   border-radius: 50px;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-home {
+    margin-left: 0px;
+    font-size: 18px;
+  }
+  .nav-home-a:hover {
+    font-size: 20px;
+  }
+}
+
 .main-title {
   font-size: 150px;
   font-family: pop, 幼圆, Arial, sans-serif;
